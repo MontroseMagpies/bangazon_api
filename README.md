@@ -30,26 +30,10 @@ End state goal/s: Fully complete x # of tickets.
     -
     -
 
-#Article 2: Ticket ___#__name___;
--End state goal of ticket.
--Requirements, w/ reference if any.
--Execution steps.
--
+    #Article 2: Ticket _____name___
+    - End state goal of ticket.
+    - Requirements, w/ reference if any.
+    - Execution steps.
+    - 
 
-#Article 3: Ticket ___#__name___;
--End state goal of ticket.
--Requirements, w/ reference if any.
--Execution steps.
--
 
-#Article 4: Ticket ___#__name___;
--End state goal of ticket.
--Requirements, w/ reference if any.
--Execution steps.
--
-
-#Article 5: Ticket ___#__name___;
--End state goal of ticket.
--Requirements, w/ reference if any.
--Execution steps.
--
