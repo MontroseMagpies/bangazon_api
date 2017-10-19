@@ -2,7 +2,8 @@
 
 # Article 1: Warning Order and  Instuctions; 
 
-
+    ## End state goal/s: 
+    
     Using Ruby on Rails framework application, you will be building the initial, open API for Bangazon.
     Expose the following resources in your API.
         i. Customer
@@ -19,8 +20,6 @@
     
 ____________
 ____________
-
-    ## End state goal/s: .
 
     ## Ticket title Glossary:
         - Article 2 Ticket
