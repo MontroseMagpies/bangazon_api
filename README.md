@@ -17,8 +17,8 @@
 
     The initial version is for internal consumption only, so do not require permissions to access, or manipulate, any resources.
 
--End state goal/s: Fully complete x # of tickets.
--
+End state goal/s: Fully complete x # of tickets.
+
 -Ticket title Glossary.
     - Article 2 Ticket
     - Article 3 Ticket
@@ -30,25 +30,25 @@
     -
     -
 
-##Article 2: Ticket ___#__name___;
+#Article 2: Ticket ___#__name___;
 -End state goal of ticket.
 -Requirements, w/ reference if any.
 -Execution steps.
 -
 
-##Article 3: Ticket ___#__name___;
+#Article 3: Ticket ___#__name___;
 -End state goal of ticket.
 -Requirements, w/ reference if any.
 -Execution steps.
 -
 
-##Article 4: Ticket ___#__name___;
+#Article 4: Ticket ___#__name___;
 -End state goal of ticket.
 -Requirements, w/ reference if any.
 -Execution steps.
 -
 
-##Article 5: Ticket ___#__name___;
+#Article 5: Ticket ___#__name___;
 -End state goal of ticket.
 -Requirements, w/ reference if any.
 -Execution steps.
