@@ -1,6 +1,6 @@
 # bangazon_orientation_api
 
-#Article 1: Warning Order and  Instuctions; 
+# Article 1: Warning Order and  Instuctions; 
 
 
     Using Ruby on Rails framework application, you will be building the initial, open API for Bangazon.
@@ -16,24 +16,34 @@
         ix. Employee
 
     The initial version is for internal consumption only, so do not require permissions to access, or manipulate, any resources.
+    
+____________
+____________
 
-End state goal/s: Fully complete x # of tickets.
+    ## End state goal/s: .
 
--Ticket title Glossary.
-    - Article 2 Ticket
-    - Article 3 Ticket
-    - Article 4 Ticket
-    - Article 5 Ticket 
--Learning Objectives.
-    -
-    -
-    -
-    -
+    ## Ticket title Glossary:
+        - Article 2 Ticket
+        - Article 3 Ticket
+        - Article 4 Ticket
+        - Article 5 Ticket 
+        
+____________
+____________
+    
+    ## Learning Objectives.
+        -
+        -
+        -
+        -
+____________
+____________
 
-    #Article 2: Ticket _____name___
+    #### Article 2: Ticket _____name___
     - End state goal of ticket.
     - Requirements, w/ reference if any.
     - Execution steps.
     - 
-
+____________
+____________
 
