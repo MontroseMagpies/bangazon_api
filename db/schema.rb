@@ -10,10 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171022190331) do
+ActiveRecord::Schema.define(version: 20171023160710) do
 
-  create_table "customers", force: :cascade do |t|
-    t.string "customer_id"
+  create_table "customers", primary_key: "customer_id", force: :cascade do |t|
     t.string "name_first"
     t.string "name_last"
     t.string "customer_created_date"
@@ -28,8 +27,7 @@ ActiveRecord::Schema.define(version: 20171022190331) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "orders", force: :cascade do |t|
-    t.string "order_id"
+  create_table "orders", primary_key: "order_id", force: :cascade do |t|
     t.string "product_id"
     t.string "payment_type_id"
     t.boolean "fulfilled"
@@ -37,6 +35,23 @@ ActiveRecord::Schema.define(version: 20171022190331) do
     t.datetime "updated_at", null: false
     t.integer "customer_id"
     t.index ["customer_id"], name: "index_orders_on_customer_id"
+  end
+
+  create_table "product_types", primary_key: "product_type_id", force: :cascade do |t|
+    t.string "product_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", primary_key: "product_id", force: :cascade do |t|
+    t.float "product_price"
+    t.string "product_description"
+    t.integer "product_types_id"
+    t.integer "customers_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["customers_id"], name: "index_products_on_customers_id"
+    t.index ["product_types_id"], name: "index_products_on_product_types_id"
   end
 
 end
