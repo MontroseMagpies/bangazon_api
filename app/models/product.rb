@@ -1,4 +1,4 @@
 class Product < ApplicationRecord
-  belongs_to :Customer
-  belongs_to :ProductType
+  belongs_to :customer
+  belongs_to :product_type
 end

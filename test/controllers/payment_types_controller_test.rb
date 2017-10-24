@@ -12,7 +12,7 @@ class PaymentTypesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create payment_type" do
     assert_difference('PaymentType.count') do
-      post payment_types_url, params: { payment_type: { Customer_id: @payment_type.Customer_id, account_number: @payment_type.account_number, payment_type: @payment_type.payment_type } }, as: :json
+      post payment_types_url, params: { payment_type: { account_number: @payment_type.account_number, customer_id: @payment_type.customer_id, payment_type: @payment_type.payment_type } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class PaymentTypesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update payment_type" do
-    patch payment_type_url(@payment_type), params: { payment_type: { Customer_id: @payment_type.Customer_id, account_number: @payment_type.account_number, payment_type: @payment_type.payment_type } }, as: :json
+    patch payment_type_url(@payment_type), params: { payment_type: { account_number: @payment_type.account_number, customer_id: @payment_type.customer_id, payment_type: @payment_type.payment_type } }, as: :json
     assert_response 200
   end
 

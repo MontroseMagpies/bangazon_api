@@ -3,9 +3,9 @@
 one:
   payment_type: MyString
   account_number: 1
-  Customer: one
+  customer: one
 
 two:
   payment_type: MyString
   account_number: 1
-  Customer: two
+  customer: two

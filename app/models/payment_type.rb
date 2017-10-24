@@ -1,3 +1,3 @@
 class PaymentType < ApplicationRecord
-  belongs_to :Customer
+  belongs_to :customer
 end

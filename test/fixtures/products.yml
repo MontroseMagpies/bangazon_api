@@ -3,11 +3,11 @@
 one:
   product_price: 1.5
   product_description: MyString
-  Customer: one
-  ProductType: one
+  customer: one
+  product_type: one
 
 two:
   product_price: 1.5
   product_description: MyString
-  Customer: two
-  ProductType: two
+  customer: two
+  product_type: two
