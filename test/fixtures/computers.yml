@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purchase_date: 2017-10-24
+  decommission_date: 2017-10-24
+
+two:
+  purchase_date: 2017-10-24
+  decommission_date: 2017-10-24

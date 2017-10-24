@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024153242) do
+ActiveRecord::Schema.define(version: 20171024165854) do
+
+  create_table "computers", force: :cascade do |t|
+    t.date "purchase_date"
+    t.date "decommission_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "customers", force: :cascade do |t|
     t.string "name_first"
@@ -24,6 +31,24 @@ ActiveRecord::Schema.define(version: 20171024153242) do
     t.date "last_date_active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "departments", force: :cascade do |t|
+    t.string "department_name"
+    t.float "expense_budget"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "employees", force: :cascade do |t|
+    t.string "name_first"
+    t.string "name_last"
+    t.string "job_title"
+    t.date "employee_hire_date"
+    t.integer "department_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["department_id"], name: "index_employees_on_department_id"
   end
 
   create_table "orders", force: :cascade do |t|

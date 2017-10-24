@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :employees
+  resources :departments
+  resources :computers
   resources :product_orders
   resources :orders
   resources :products
