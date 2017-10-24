@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  payment_type: MyString
+  account_number: 1
+  Customer: one
+
+two:
+  payment_type: MyString
+  account_number: 1
+  Customer: two
