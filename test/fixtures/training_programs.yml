@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2017-10-24
+  end_date: 2017-10-24
+  course_title: MyString
+  instructor: MyString
+  max_occupancy: 1
+
+two:
+  start_date: 2017-10-24
+  end_date: 2017-10-24
+  course_title: MyString
+  instructor: MyString
+  max_occupancy: 1
