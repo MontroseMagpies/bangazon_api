@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fulfilled: false
+  payment_type: one
+  customer: one
+
+two:
+  fulfilled: false
+  payment_type: two
+  customer: two

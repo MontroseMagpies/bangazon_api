@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024143847) do
+ActiveRecord::Schema.define(version: 20171024153242) do
 
   create_table "customers", force: :cascade do |t|
     t.string "name_first"
@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(version: 20171024143847) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.boolean "fulfilled"
+    t.integer "payment_type_id"
+    t.integer "customer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_orders_on_customer_id"
+    t.index ["payment_type_id"], name: "index_orders_on_payment_type_id"
+  end
+
   create_table "payment_types", force: :cascade do |t|
     t.string "payment_type"
     t.integer "account_number"
@@ -33,6 +43,15 @@ ActiveRecord::Schema.define(version: 20171024143847) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_payment_types_on_customer_id"
+  end
+
+  create_table "product_orders", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_product_orders_on_order_id"
+    t.index ["product_id"], name: "index_product_orders_on_product_id"
   end
 
   create_table "product_types", force: :cascade do |t|
