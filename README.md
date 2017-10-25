@@ -1,4 +1,5 @@
-# README
+# Montrose Magpies API Acess to Bangazon
+This is an API providing access to customer and employee data at www.bangazon.com.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
