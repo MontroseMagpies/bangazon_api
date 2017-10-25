@@ -4,11 +4,12 @@ class CustomersController < ApplicationController
   # GET /customers
   def index
     # ? url param
-    # get all customer unless active param exist
-    @customers = Customer.all unless params[:active].present?
-
+    # get all customers
+    @customers = Customer.all
+    # if params true, show active customers
     if params[:active] == 'true'
       @customers = Customer.where(:active => true)
+    # if params false, show inactive customers
     elsif params[:active] == 'false'
       @customers = Customer.where(:active => false)
     end
