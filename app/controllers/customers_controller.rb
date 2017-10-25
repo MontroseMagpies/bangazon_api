@@ -3,7 +3,15 @@ class CustomersController < ApplicationController
 
   # GET /customers
   def index
-    @customers = Customer.all
+    # ? url param
+    # get all customer unless active param exist
+    @customers = Customer.all unless params[:active].present?
+
+    if params[:active] == 'true'
+      @customers = Customer.where(:active => true)
+    elsif params[:active] == 'false'
+      @customers = Customer.where(:active => false)
+    end
 
     render json: @customers
   end
