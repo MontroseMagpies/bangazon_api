@@ -10,10 +10,8 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   def show
+    # include products when rendering json
     render json: @order, include: ["products"]
-    # .product.orders => { includes :products }
-    # :include => [:products => {:only => :product_price}] # show me products associated with order
-    # :include => [:products]
   end
 
   # POST /orders

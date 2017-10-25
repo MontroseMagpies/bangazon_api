@@ -36,14 +36,15 @@ class TrainingProgramsController < ApplicationController
 
   # DELETE /training_programs/1
   def destroy
-    if @training_program.start_date > DateTime.now 
-      @training_program.destroy     
+    #if start date is a future date delete
+    if @training_program.start_date > DateTime.now
+      @training_program.destroy
       else
-        render json: @training_program.errors, status: :unprocessable_entity
+        # if class date is current or in the past, display errors deletion not possible
         # puts "Can't delete because course has already started"
+        render json: @training_program.errors, status: :unprocessable_entity
     end
   end
-
 
   # def destroy
   #   @training_program.destroy
