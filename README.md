@@ -1,97 +1,268 @@
-# Montrose Magpies API Acess to Bangazon
-This is an API providing access to customer and employee data at www.bangazon.com.
+# **Bangazon API - Montrose-Magpies Edition:**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created an API using Ruby 2.4.2 and Rails 5. The purpose of the API is to allow access
+to the Bangazon customer and employee database.
 
-Things you may want to cover:
+## **Getting Started:**
+- CLI commands:
+1. Clone repo.
+```
+git clone https://github.com/MontroseMagpies/bangazon_api.git
+```
+2. Install gems from gem file to local machine.
+```
+bundle install
+```
+3. Migrate files to data browser.
+```
+rails db:migrate
+```
 
-* Ruby version
+## **Prerequisites**
+1. Text editor such as Sublime, Atom, or VSC [https://code.visualstudio.com/](url)
+2. Postman: [https://www.getpostman.com/](url)
+3. A sql browser such as: [http://sqlitebrowser.org/](url)
 
-* System dependencies
+## **Installing**
 
-* Configuration
+1. Follow getting started steps
+2. run rails server
+3. test using postman with following endpoints: (may sub numbers 1-3 for endpoints with id's)
+- Postman testing note: Test Post, Get, Put, Patch, and/or Delete in accordance with requirements for database table.
+_________________
+_________________
+- /customers
+        - /customers/1
+```
+{
+  "customer": {
+    "name_first": "Montrose",
+    "name_last": "Magpies",
+    "address_street": "123 NSS Rd",
+    "address_email": "nssstudents@nss.com",
+    "city":  "Nashville",
+    "state": "TN",
+    "zip_code": "37221",
+    "boolean": "true",
+    "last_date_active": "Oct 23, 2017"
+    }
+}
+```
+_________________
+_________________
+    
+- /products
+        - /products/1
 
-* Database creation
+```
+{
+  "product": {
+    "product_price": "12.12",
+    "product_description": "1234",
+    "customer_id": "2",
+    "product_type_id": "1"
+    }
+}
+```
+_________________
+_________________
+- /product_types
+        - /payment_types/1
 
-* Database initialization
+```
+{
+  "product_type": {
+    "product_type": "hmmm"
+    }
+}
+```
+_________________
+_________________
+- /orders
+        - /orders/1
 
-* How to run the test suite
+```
+{
+  "order": {
+    "payment_type_id": "12.12",
+    "fulfilled": "true",
+    "payment_type": "1",
+    "customer_id": "1"
+    }
+}
+```
+_________________
+_________________
+- /product_order
+        - /product_order/1
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+{
+  "product_order": {
+    "product_order_id": "hmmeeem",
+    "product_id": "1",
+    "order_id": "1"
+    }
+}
+```
+_________________
+_________________
+- /payment_types
+        - /payment_types/1
 
-* Deployment instructions
+```
+{
+  "payment_type": {
+    "payment_type": "hmmm",
+    "account_number": "1234",
+    "customer_id": "1"
+    }
+}
+```
+_________________
+_________________
+- /employees
+        - /employees/1
 
-#Montrose-Magpies(Bangazon API)
+```
+{
+  "employee": {
+    "name_last": "White",
+    "name_first": "Adam",
+    "job_title": "Junior Dev",
+    "employee_hire_date": "2016-04-20",
+    "Department_id":  2
+}
+}
+```
+_________________
+_________________
+- /departments
+        - /departments/1
 
-One Paragraph of project description goes here
+```
+{
+  "department": {
+    "department_id": "1",
+    "department_name": "coolest department",
+    "expense_budget": "12,000.00"
+    }
+}
+```
+_________________
+_________________
+- /computers
+        - /computers/1
 
-##Getting Started
+```
+{
+  "computer": {
+    "computer_id": "1",
+    "purchase_date": "2016-04-20",
+    "decommission_date": "2016-04-20"
+    }
+}
+```
+_________________
+_________________
+- /employee_computers
+        - /employee_computers/1
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+```
+{
+  "employee_computer": {
+    "computer_id": "1",
+    "employee_id": "1"
+    }
+}
+```
+_________________
+_________________
+- /employee_training_programs
+        - /employee_training_programs/1
 
-##Prerequisites
+```
+{
+  "employee_training_program": {
+    "employee_training_program_id": "12",
+    "training_program_id": "1",
+    "program_id": "1",
+    "employee": "1"
+    }
+}
+```
+_________________
+_________________
+- /training_programs
+        - /training_programs/1
 
-What things you need to install the software and how to install them
+```
+{
+  "training_program": {
+    "training_program_id": "1",
+    "start_date": "2017-10-24",
+    "end_date:": "2017-10-24",
+    "subject": "Safety",
+    "instructor": "Darth Jisie",
+    "max_occupancy": "15"
+    }
+}
+```
 
-Give examples
+## Running the tests
 
-###Installing
+### CORS testing for issue #__
 
-A step by step series of examples that tell you have to get a development env running
+1. Create a _test_folder_ **outside of repository folder**
 
-Say what the step will be
+2. In _test_folder_ create a simple index.html
 
-Give the example
-And repeat
+    Paste the following in:
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bangazon</title>
+</head>
+<body>
+    <h1>test</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+```
+    
+3. Also create a main.js with one ajax call to bangazon API inside _test_folder_
 
-###Running the tests
+    Paste the following:
+```
+    $.get( "http://localhost:3000/orders", function( data ) {
+    console.log('test if we got stuff', data);
+  });
+```
 
-Explain how to run the automated tests for this system
+4. $sudo vim /etc/host to run host file on mac
+5. enter [www.bangazon.com:8080](url) in browser to test access
 
-Break down into end to end tests
+## Built With
 
-Explain what these tests test and why
+ - Rails - The framework used
+ - Ruby - Language used
+ - SQL - database
 
-Give an example
-And coding style tests
+## Authors
 
-Explain what these tests test and why
+Clayton Massie- Team Lead -  [https://github.com/clmassie1](url)
+Daniel Babcock - Member -  [https://github.com/DanielBabcock](url)
+Jasmine Quach - Member -  [https://github.com/jasmineq](url)
+Edward Rutz - Member -  [https://github.com/edwardrutz](url)
 
-Give an example
-Deployment
 
-Add additional notes about how to deploy this on a live system
+## Acknowledgments
 
-Built With
-
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Versioning
-
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-Authors
-
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-
-Hat tip to anyone who's code was used
-Inspiration
-etc
-
+We would like to thank our fearless leader Darth Jisie, her sidekicks Hannah and Casey, and our fellow students who helped troubleshoot, especially Brooke and the Puddlemere-United team.
 
