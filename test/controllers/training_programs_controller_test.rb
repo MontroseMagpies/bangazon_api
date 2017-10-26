@@ -3,6 +3,8 @@ require 'test_helper'
 class TrainingProgramsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @training_program = training_programs(:one)
+    #allow deletion of training program(s)
+    @training_program_past = training_programs(:two)
   end
 
   test "should get index" do
@@ -34,5 +36,13 @@ class TrainingProgramsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_response 204
+  end
+
+  test "should not destroy training_program" do
+    assert_difference('TrainingProgram.count', 0) do
+      delete training_program_url(@training_program_past),
+      as: :json
+    end 
+    assert_response 422
   end
 end

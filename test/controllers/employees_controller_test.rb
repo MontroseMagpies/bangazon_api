@@ -28,11 +28,5 @@ class EmployeesControllerTest < ActionDispatch::IntegrationTest
     assert_response 200
   end
 
-  test "should destroy employee" do
-    assert_difference('Employee.count', -1) do
-      delete employee_url(@employee), as: :json
-    end
-
-    assert_response 204
-  end
+ 
 end

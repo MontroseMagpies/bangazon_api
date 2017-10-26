@@ -1,5 +1,5 @@
 class DepartmentsController < ApplicationController
-  before_action :set_department, only: [:show, :update]
+  before_action :set_department, only: [:show, :update, :destroy]
 
   # GET /departments
   def index
@@ -33,10 +33,10 @@ class DepartmentsController < ApplicationController
     end
   end
 
-  # DELETE /departments/1
-  # def destroy
-  #   @department.destroy
-  # end
+  #DELETE /departments/1
+  def destroy
+    @department.destroy
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
