@@ -3,6 +3,22 @@
 Created an API using Ruby 2.4.2 and Rails 5. The purpose of the API is to allow access
 to the Bangazon customer and employee database.
 
+## Table of Contents:
+
+- [**Bangazon API - Montrose-Magpies Edition:**](#--bangazon-api---montrose-magpies-edition---)
+  * [**Getting Started:**](#--getting-started---)
+  * [**Prerequisites**](#--prerequisites--)
+  * [**Installing**](#--installing--)
+  * [Running the tests](#running-the-tests)
+    + [CORS testing for issue #__](#cors-testing-for-issue----)
+  * [Built With](#built-with)
+  * [Authors](#authors)
+  * [Acknowledgments](#acknowledgments)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
 ## **Getting Started:**
 - CLI commands:
 1. Clone repo.
