@@ -256,10 +256,10 @@ _________________
 
 ## Authors
 
-Clayton Massie- Team Lead -  [https://github.com/clmassie1](url)
-Daniel Babcock - Member -  [https://github.com/DanielBabcock](url)
-Jasmine Quach - Member -  [https://github.com/jasmineq](url)
-Edward Rutz - Member -  [https://github.com/edwardrutz](url)
+- Clayton Massie- Team Lead -  [https://github.com/clmassie1](url)
+- Daniel Babcock - Member -  [https://github.com/DanielBabcock](url)
+- Jasmine Quach - Member -  [https://github.com/jasmineq](url)
+- Edward Rutz - Member -  [https://github.com/edwardrutz](url)
 
 
 ## Acknowledgments
