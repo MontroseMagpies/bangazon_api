@@ -6,9 +6,9 @@ to the Bangazon customer and employee database.
 ## Table of Contents:
 
 - [**Bangazon API - Montrose-Magpies Edition:**](#--bangazon-api---montrose-magpies-edition---)
-  * [**Getting Started:**](#--getting-started---)
-  * [**Prerequisites**](#--prerequisites--)
-  * [**Installing**](#--installing--)
+  * [Getting Started](#--getting-started---)
+  * [Prerequisites](#--prerequisites--)
+  * [Installing](#--installing--)
   * [Running the tests](#running-the-tests)
     + [CORS testing for issue #__](#cors-testing-for-issue----)
   * [Built With](#built-with)
